@@ -1,6 +1,7 @@
 [build]
   command = "npx prisma generate && npm run build"
   publish = ".output/public"
+  functions = "netlify/functions"
 
 
 [[redirects]]
