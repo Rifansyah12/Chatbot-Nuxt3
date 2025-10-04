@@ -3,9 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build --logLevel=silent",
+    "build": "npm run prepare && nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "prepare": "prisma generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
