@@ -1,0 +1,11 @@
+{
+  // https://nuxt.com/docs/guide/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "types": ["nuxt", "@nuxt/schema", "node", "nuxt/app", "vite/client"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true
+  },
+  "include": ["nuxt.config.ts", "types/**/*.d.ts", "**/*.ts", "**/*.vue"]
+}
