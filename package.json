@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "npm run prepare && nuxt build",
+    "build": "nuxt build",
+    "build:netlify": "npx prisma generate && nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "prepare": "prisma generate",
