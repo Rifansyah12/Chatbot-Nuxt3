@@ -3,6 +3,7 @@ export default defineNuxtConfig({
     enabled: false,
   },
   modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt", "@logto/nuxt"],
+
   runtimeConfig: {
     // Private: hanya server
     logto: {
@@ -28,5 +29,11 @@ export default defineNuxtConfig({
   shadcn: {
     prefix: "",
     componentDir: "./components/ui",
+  },
+
+  // ⬇ Tambahkan ini untuk Netlify
+  ssr: true,
+  nitro: {
+    preset: "netlify",
   },
 });
