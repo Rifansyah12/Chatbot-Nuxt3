@@ -32,7 +32,7 @@ export default defineNuxtConfig({
   },
 
   // ⬇ Tambahkan ini untuk Netlify
-  ssr: true,
+  ssr: false,
   nitro: {
     preset: "netlify",
   },
